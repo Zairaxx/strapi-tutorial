@@ -1,0 +1,20 @@
+#login-container {
+    border: 1px solid black;
+    display:flex;
+    min-height:200px;
+    flex-direction: column;
+}
+
+label {
+    width:140px;
+    display:inline-block;
+    padding-left:10px;
+}
+
+h2 {
+    padding-left:10px;
+}
+
+.hidden {
+    display:none !important;
+}

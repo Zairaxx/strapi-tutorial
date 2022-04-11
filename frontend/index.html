@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="login-container">
+        <div>
+            <h2>Logga in</h2>
+            <div>
+                <label for="identifier">Inloggning</label>
+                <input type="text" id="identifier">
+                
+            </div>
+            <div>
+                <label for="password">Lösenord</label>
+                <input type="password" id="password" >
+                <button onclick="login()">Logga in</button>
+            </div>
+            
+        </div>
+        <div>
+            <h2>Registrera dig här:</h2>
+            <div>
+                <label for="registerUsername">Användarnamn</label>
+                <input type="text" id="registerUsername">
+            </div>
+            <div>
+                <label for="registerEmail">E-postadress</label>
+                <input type="email" id="registerEmail">
+            </div>
+            <label for="registerPassword">Lösenord</label>
+            <input type="text" id="registerPassword">
+            <button onclick="register()">Registrera</button>
+        </div>
+    </div>
+    <button onclick="checkMe()">Check who is logged in!</button>
+    <div id="form-container" class="hidden">
+        <h2>Lägg till en produkt</h2>
+        <div>
+            <label for="productName">Produktnamn</label>
+            <input type="text" id="productName">
+        </div>
+        <div>
+            <label for="productPrice">Pris</label>
+            <input type="number" id="productPrice">
+        </div>
+        <div>
+            <label for="productImage">Bild:</label>
+            <input type="file" id="productImage">
+        </div>
+        <button onclick="addProduct()">Lägg till produkt</button>
+    </div>
+    <div id="product-list" class="hidden">
+        <h2>Produktlista</h2>
+        <ul id="products"></ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
